@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Super duper big belly</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina4">
+
+  <div class="overlay"></div>
+
+  <div class="popup">
+    <h2>Buon compleanno milow!</h2>
+
+    <p>
+      Sei arrivato ai 20 anni... siamo cresciuti insieme da quando ne avevi 18 e voglio passarne molti altri insieme a te. <br> <br>
+      Ti amo tantissimo e per questo ti ho preparato questa sorpresa, insieme ad un piccolo regalo che spero ti piaccia. <br> <br>
+      Al mio spiderman preferito,  <br> <br>
+      <span class="firma">Il milo 🩷</span>
+    </p>
+
+    <button class="btn" onclick="chiudi()">Chiudi</button>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- CORIANDOLI -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script>
+    confetti({
+      particleCount: 120,
+      spread: 90,
+      origin: { y: 0.6 }
+    });
+  </script>
+
+<div id="video" style="display:none;">
+    <video id="mioVideo" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+</div>
+
+</body>
+</html>

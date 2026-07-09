@@ -1,0 +1,355 @@
+body {
+  background-image: url("https://w.wallhaven.cc/full/83/wallhaven-83ow1j.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0px;
+}
+
+.title {
+  font-family: Arial, sans-serif;
+  font-size: 55px;
+  margin: 0;
+  color:rgb(255, 255, 255)
+  
+}
+
+.title:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subtitle {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  margin-top: 0px;
+  opacity: 0.85;
+  color:rgb(255, 255, 255)
+}
+
+.subtitle:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sticker {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.next-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff6b81;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+  font-family: Arial, sans-serif;
+}
+
+.next-btn:hover {
+  transform: scale(1.1);
+  background: #c24852;
+
+}
+
+.letter-img {
+  width: 300px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.letter-img:hover {
+  transform: scale(1.05);
+}
+
+.text {
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.page2 {
+  background-image: url("https://w.wallhaven.cc/full/ly/wallhaven-ly8xmy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.page2 .next-btn {
+  margin-top: -30px !important;
+}
+
+.page3 {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-image: url("https://w.wallhaven.cc/full/ly/wallhaven-ly8xmy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image3 {
+  width: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.image3:hover {
+  transform: scale(1.05);
+}
+
+.text3 {
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.buttons3 {
+  display: inline-block;
+  gap: 25px;
+  margin-top: -30px;
+}
+
+.yes, .no {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.yes {
+  background: #ff6b81;
+  color: white;
+   transition: 0.2s;
+}
+
+.yes:hover {
+  transform: scale(1.4);
+  animation: shakeSoft 0.3s infinite;
+  background: #c24852;
+}
+
+@keyframes shakeSoft {
+  0% { transform: scale(1.4) translate(0, 0); }
+  25% { transform: scale(1.4) translate(-2px, 1px); }
+  50% { transform: scale(1.4) translate(2px, -1px); }
+  75% { transform: scale(1.4) translate(-1px, -1px); }
+  100% { transform: scale(1.4) translate(0, 0); }
+}
+
+.no {
+  background: rgb(117, 23, 39);
+  color: white;
+}
+
+.no {
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+/* SFONDO PAGINA 4 */
+body.pagina4 {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-image: url("https://w.wallhaven.cc/full/ly/wallhaven-ly8xmy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* sfondo scuro dietro popup */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+/* POPUP LETTERA */
+.popup {
+  position: relative;
+  z-index: 10;
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  width: 320px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  animation: fadeIn 0.5s ease;
+  color : rgb(0, 0, 0);
+}
+
+/* animazione */
+@keyframes fadeIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* bottone */
+.btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #ff6b81;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff4757;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#video {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#video iframe {
+  border-radius: 15px;
+}
+
+#password-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://w.wallhaven.cc/full/wq/wallhaven-wqkk3q.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.password-box {
+  background: rgb(49, 4, 14);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.password-box input {
+  width: 80%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.password-box input:hover {
+  transition: 0.3s;
+  border-color: grey;
+}
+
+.password-box button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #643a40;
+  color: white;
+  cursor: pointer;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
+}
+
+.password-box button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#video{
+    display:none;
+    justify-content:center;
+    margin-top:30px;
+}
+
+#mioVideo{
+    width:80%;
+    max-width:900px;
+    border-radius:20px;
+}
